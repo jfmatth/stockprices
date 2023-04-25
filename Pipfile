@@ -9,6 +9,7 @@ gunicorn = "*"
 whitenoise = "*"
 dj-database-url = "*"
 psycopg = "*"
+pyex = "*"
 
 [dev-packages]
 
