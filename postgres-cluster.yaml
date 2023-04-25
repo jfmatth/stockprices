@@ -2,8 +2,7 @@ kind: "postgresql"
 apiVersion: "acid.zalan.do/v1"
 
 metadata:
-  name: "stockprices"
-  # namespace: "default"
+  name: "home"
   labels:
     team: acid
 
@@ -14,9 +13,12 @@ spec:
   numberOfInstances: 1
   enableMasterLoadBalancer: true
   volume:
-    size: "1Gi"
+    size: "10Gi"
     storageClass: "longhorn-single"
-
+  users:
+    develop: []
+  databases:
+    stockprices: develop
   allowedSourceRanges:
     # IP ranges to access your cluster go here
   
